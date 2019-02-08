@@ -1,7 +1,6 @@
 import { createStore } from 'redux';
-import { contacts } from '../staticData';
 import reducer from '../reducers';
 
-const store = createStore(reducer, {contacts}); // { contacts: contacts } --> initial state
+const store = createStore(reducer); // intial state set by the reducer
 
 export default store;
