@@ -4,7 +4,6 @@ import ChatWindow from '../containers/ChatWindow';
 
 const Main = ({ user, activeUserId }) => {
     const renderMainContent = () => {
-        console.log(user, activeUserId);
         return !activeUserId ? <Empty user={user} activeUserId={activeUserId} /> : <ChatWindow activeUserId={activeUserId} />
     }
     return <main className="main">{renderMainContent()}</main>;
